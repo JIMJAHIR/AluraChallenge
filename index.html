@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/aa20f71193.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="bloque_General">
+        <img class="img_alura" src="img/Alura.png" alt="">
+        <div class="bloque_Entrada">
+            <textarea type="text" id="texto-entrada" name="texto-entrada"
+                placeholder="Ingrese el texto aquí"></textarea>
+            <div class="bloque_Entrada_Opciones">
+                <button id="Encriptar" name="Encriptar">Encriptar</button>
+                <button id="Desencriptar" name="Desencriptar">Desencriptar</button>
+                <button id="Limpiar" name="Limpiar">Limpiar</button>
+            </div>
+        </div>
+
+        <div class="bloque_Salida">
+            <textarea id="texto-salida" name="texto-salida" readonly  class="imagen-placeholder"
+                placeholder="De momento no se ha encriptado ningún texto"></textarea>
+            <div class="bloque_Entrada_Opciones">
+                <button id="Copiar" name="Copiar">Copiar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scrip.js"></script>
+
+</body>
+
+</html>

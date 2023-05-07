@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+}
+.img_alura{
+position: absolute;
+width: 100px;
+height: 100px;
+top: 15px;
+left: 15px;
+z-index: 0;
+
+}
+
+
+.bloque_General {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(40, 55, 71 );
+}
+
+.bloque_Entrada {
+  width: 40%;
+  height: 70%;
+  margin-right: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloque_Entrada textarea,
+.bloque_Salida textarea {
+  background-color: #fffffff5;
+  color: #221f1f;
+  width: 100%;
+  height: 80%;
+  margin: 0 20px;
+  font-size: 16px;
+  resize: none;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.bloque_Entrada_Opciones {
+  text-align: center;
+  width: 80%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.bloque_Entrada_Opciones button {
+  background-color:rgba(252, 253, 255, 0.803);
+  color: #1f1f1f;
+  font-weight: bold;
+  width: 80%;
+  margin: 2%;
+  height: 70%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.bloque_Entrada_Opciones button:hover {
+  background-color: #ffffff;
+  color: #1f1f1f;
+}
+
+.bloque_Salida {
+  width: 20%;
+  height: 70%;
+  margin-right: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#texto-entrada::placeholder,
+#texto-salida::placeholder {
+  color: #333030;
+}
+
+.imagen-placeholder {
+  background-image: url("img/fondo.png");
+  width: 10%;
+  height: 70%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding-left: 50px; /* Ajusta el valor según el tamaño de la imagen */
+}
+
+.sin-imagen-placeholder::before {
+  display: none;
+}
+
+@media screen and (max-width: 1180px) {
+  body {
+    background-color: #1f1f1f;
+  }
+
+  .bloque_General {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bloque_Entrada,
+  .bloque_Salida {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: rgb(40, 55, 71 );
+  }
+
+  .bloque_General {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bloque_Entrada,
+  .bloque_Salida {
+    width: 60%;
+    height: 100%;
+  }
+}
